@@ -3,3 +3,4 @@ gunicorn==19.8.1
 idna==2.6
 pipenv==11.10.1
 py2app==0.7.3
+pastedeploy==1.5.2
