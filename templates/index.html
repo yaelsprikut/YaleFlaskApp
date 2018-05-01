@@ -1,35 +1,67 @@
 {% extends 'layout.html' %}
 
 {% block body %}
- <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Balance</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="headline">Spotify <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Apple</h1>
+    <p>Convert your Apple Music share URLs to Spotify and vice versa. </p>
+    <br>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Download Free Trial &raquo;</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    {% include 'includes/form.html' %}
+  </div>
+</div>
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-cloud glyphicon-large" aria-hidden="true"></span>
+        <h3>Cloud Computable</h3>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
       </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-floppy-disk glyphicon-large" aria-hidden="true"></span>
+        <h3>Backwards Compatible</h3>
+        <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
       </div>
-
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-console glyphicon-large" aria-hidden="true"></span>
+        <h3>GUI Free</h3>
+        <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% endblock %}
