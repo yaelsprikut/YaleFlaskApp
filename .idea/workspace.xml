@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13177817-1a93-4765-86d2-03bccf672c6d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/includes/form.html" afterDir="false" />
-    </list>
+    <list default="true" id="13177817-1a93-4765-86d2-03bccf672c6d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +177,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="67" width="1260" height="737" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19444445" />
       <window_info anchor="bottom" id="TODO" order="10" />
