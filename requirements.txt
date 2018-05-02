@@ -4,3 +4,12 @@ idna==2.6
 pipenv==11.10.1
 py2app==0.7.3
 pastedeploy==1.5.2
+WTForms==2.1
+flask-bootstrap==2.3.2.2
+Jinja2>=2.10
+Werkzeug>=0.14
+certifi==0.0.8
+chardet==1.0.1
+distribute==0.6.24
+requests==0.11.1
+beautifulsoup4==4.6.0

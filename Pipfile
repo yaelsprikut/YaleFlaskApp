@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "==19.8.1"
+idna = "==2.6"
+pipenv = "==11.10.1"
+"py2app" = "==0.7.3"
+Flask = "==1.0.1"
+PasteDeploy = "==1.5.2"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
