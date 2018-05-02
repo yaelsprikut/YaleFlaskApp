@@ -17,15 +17,14 @@ class ReusableForm(Form):
 @app.route("/", methods=['GET', 'POST'])
 def index():
     form = ReusableForm(request.form)
-    print form.errors
+    print(form.errors)
     if request.method == 'POST':
         example_input_email = request.form['exampleInputEmail1']
         # print example_input_email
         page = requests.get(example_input_email)
         soup = BeautifulSoup(page.content, 'html.parser')
         data = soup.find('title').get_text()
-        print data
-
+        print(data)
 
         if form.validate():
             # Save the comment here.
