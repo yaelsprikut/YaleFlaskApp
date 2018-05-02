@@ -1,7 +1,7 @@
 from flask import Flask, render_template, flash, request
 # from wtforms import Form, StringField
-import requests
-from bs4 import BeautifulSoup
+# import requests
+# from bs4 import BeautifulSoup
 
 
 app = Flask(__name__)
