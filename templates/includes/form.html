@@ -1,7 +1,9 @@
-<form style="font-size:18px;">
+<form action="" method="post" style="font-size:18px;" role="form">
+  {{ form.csrf }}
   <div class="form-group">
     <label for="exampleInputEmail1">Enter your shared Spotify or Apple Music URI</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="text" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
     <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
   </div>
   <!--<div class="form-group">-->
@@ -9,4 +11,22 @@
     <!--<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
   <!--</div>-->
     <hr /><br/>
+   {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+
+        {% for message in messages %}
+            {% if "Error" not in message[1]: %}
+                <div class="alert alert-info">
+                <strong>Success! </strong> {{ message[1] }}
+                </div>
+            {% endif %}
+
+            {% if "Error" in message[1]: %}
+                <div class="alert alert-warning">
+                {{ message[1] }}
+                </div>
+            {% endif %}
+        {% endfor %}
+            {% endif %}
+        {% endwith %}
 </form>
