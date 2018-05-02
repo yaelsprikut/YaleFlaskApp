@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, request
-from wtforms import Form, TextField, validators
+from wtforms import Form, TextField
 import requests
 from bs4 import BeautifulSoup
 
