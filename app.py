@@ -1,5 +1,5 @@
 from flask import Flask, render_template, flash, request
-from wtforms import Form, TextField
+from wtforms import Form, TextAreaField
 import requests
 from bs4 import BeautifulSoup
 
@@ -11,7 +11,7 @@ app.config['SECRET_KEY'] = '7d441f27d441f27567d441f2b6176a'
 
 
 class ReusableForm(Form):
-    email = TextField('Enter your shared Spotify or Apple Music URI:')
+    email = TextAreaField('Enter your shared Spotify or Apple Music URI:')
 
 
 @app.route("/", methods=['GET', 'POST'])
